@@ -1,0 +1,37 @@
+<TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="5">
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Cost"
+                        android:textColor="#000"
+                        app:fontFamily="@font/roboto" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="$5"
+                        android:textColor="#000"
+                        app:fontFamily="@font/roboto" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Benefits"
+                        android:textColor="#000"
+                        app:fontFamily="@font/roboto" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:padding="3dip"
+                        android:text="You will get all the benifits \nexcept a card and a T-shirt"
+                        android:textColor="#000"
+                        app:fontFamily="@font/roboto" />
+                </TableRow>
+            </TableLayout>
