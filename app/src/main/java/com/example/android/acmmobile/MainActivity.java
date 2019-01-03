@@ -43,4 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, About.class);
         startActivity(intent);
     }
+
+    public void explore(View view) {
+    }
 }

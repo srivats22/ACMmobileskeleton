@@ -162,7 +162,7 @@
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/cardView6"
             app:layout_constraintEnd_toStartOf="@+id/calender"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/projects">
@@ -178,9 +178,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="100dp"
+                android:onClick="officehours"
                 android:text="Office hours"
-                android:typeface="monospace"
-                android:onClick="officehours"/>
+                android:typeface="monospace" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -195,7 +195,7 @@
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/cardView6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/officehours"
             app:layout_constraintTop_toBottomOf="@+id/tutoring">
@@ -207,12 +207,44 @@
                 android:src="@drawable/info" />
 
             <Button
-                android:onClick="about"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="100dp"
+                android:onClick="about"
                 android:text="About Us"
+                android:typeface="monospace" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contact">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/explore" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:onClick="explore"
+                android:text="Explore"
                 android:typeface="monospace" />
         </android.support.v7.widget.CardView>
     </android.support.constraint.ConstraintLayout>
